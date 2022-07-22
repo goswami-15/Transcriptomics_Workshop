@@ -1,6 +1,8 @@
-#!/usr/bin/bash
+#First name and last name are assigned to different variables, and the script prints out full name
 A="Sharmistha"
 B="Goswami"
+echo "$A $B"
+# A version where the strings are printed on the same line and a version where the strings are printed on different lines
 echo "$A $B"
 echo "$A" 
 echo "$B"
