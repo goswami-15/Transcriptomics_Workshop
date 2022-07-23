@@ -6,10 +6,8 @@ echo "$A $B"
 echo "$A $B"
 echo "$A" 
 echo "$B"
-*************************************************************************************
 ######### Bash Story One ##########
-*************************************************************************************
-# Create a new folder titled your name
+#Create a new folder titled your name
 mkdir goswami
 #Create another new directory titled biocomputing and change to that directory with one line of command
 mkdir biocomputing && cd biocomputing
@@ -22,21 +20,19 @@ mv biocomputing/wildtype.fna goswami
 #Deleting the duplicate .gbk file
 cd biocomputing
 rm wildtype.gbk.1
-#onfirmation command if the file is mutant or wild type
+#Confirmation command if the file is mutant or wild type
 cd goswami
 grep tatatata *.fna
-***** This is the mutant file*****
+###This is the mutant file
 #printing all the lines that show it is a mutant into a new file
 grep -n tatatata *.fna > mutant_lines
-**** mutant_lines is the new file containing all lines and line numbers with tatatata ****
+#### mutant_lines is the new file containing all lines and line numbers with tatatata 
 #Clearing terminal space and printing all the commands used today
 Ctrl l 
 history
 #Exiting the terminal
 exit
-*************************************************************************************
 ######### Bash Story Two ##########
-*************************************************************************************
 #Using  figlet command to draw a graphical representation of name.
 figlet Sharmistha
 #creating a folder called compare
@@ -58,9 +54,9 @@ cp Mito.dat /home/sharmistha/compare
 nano
 #!/usr/bin/bash
 sed -i 's/Mito/Mitochondrion/g' Mito.dat
-***Saved as Mitochondrion.sh *** 
+###Saved as Mitochondrion.sh 
 chmod +x Mitochondrion.sh
-*** executed this script from terminal ***
+### executed this script from terminal 
 #Renaming the file from Mito.dat to Mitochondrion.txt
 mv Mito.dat Mitochondrion.txt
 #In compare directory, cd into FastQ_Data directory.
@@ -69,4 +65,5 @@ cd FastQ_Data/
 wc -l lane8_DD_P4_TTAGGC_L008_R1.fastq.gz
 #Print the total number of lines in all fastq.gz files and save it as a new file.
 wc -l *.fastq.gz > line_numb
-**********************************************************************************************************************************************
+#Exiting terminal
+exit
