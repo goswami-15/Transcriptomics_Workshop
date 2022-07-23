@@ -6,7 +6,7 @@ echo "$A $B"
 echo "$A $B"
 echo "$A" 
 echo "$B"
-######### Bash Story One ##########
+#Bash Story One 
 #Create a new folder titled your name
 mkdir goswami
 #Create another new directory titled biocomputing and change to that directory with one line of command
@@ -23,16 +23,16 @@ rm wildtype.gbk.1
 #Confirmation command if the file is mutant or wild type
 cd goswami
 grep tatatata *.fna
-###This is the mutant file
+#This is the mutant file
 #printing all the lines that show it is a mutant into a new file
 grep -n tatatata *.fna > mutant_lines
-#### mutant_lines is the new file containing all lines and line numbers with tatatata 
+#mutant_lines is the new file containing all lines and line numbers with tatatata 
 #Clearing terminal space and printing all the commands used today
 Ctrl l 
 history
 #Exiting the terminal
 exit
-######### Bash Story Two ##########
+#Bash Story Two
 #Using  figlet command to draw a graphical representation of name.
 figlet Sharmistha
 #creating a folder called compare
@@ -50,13 +50,13 @@ grep -n rRNA Mito.dat
 #Using (cp)command copy Mito.dat into the compare directory
 cp Mito.dat /home/sharmistha/compare
 #Use nano  to do the following:
-##Changing Mito to Mitochondrion in the ID and AC header lines
+#Changing Mito to Mitochondrion in the ID and AC header lines
 nano
 #!/usr/bin/bash
 sed -i 's/Mito/Mitochondrion/g' Mito.dat
-###Saved as Mitochondrion.sh 
+#Saved as Mitochondrion.sh 
 chmod +x Mitochondrion.sh
-### executed this script from terminal 
+#executed this script from terminal 
 #Renaming the file from Mito.dat to Mitochondrion.txt
 mv Mito.dat Mitochondrion.txt
 #In compare directory, cd into FastQ_Data directory.
