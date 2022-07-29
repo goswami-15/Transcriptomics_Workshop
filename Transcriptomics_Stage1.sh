@@ -18,6 +18,7 @@ sample=("Alsen_R1"
 mkdir Output
 cd Output
 mkdir Fastqc_Reports
+cd ..
 for sample in "${sample[@]}";
 do
        fastqc Raw_Fastq/${sample}*.fastq.gz -o Output/Fastqc_Reports
