@@ -1,3 +1,3 @@
 # Transcriptomics_Workshop
-Here is the complete codes for Stage-0 Tasks.
-Updated till 22nd July 2022.
+Here is the complete codes for all Stage Tasks designed by HackBio for their Transcriptomics Workshop.
+Updated till 29th July 2022.
