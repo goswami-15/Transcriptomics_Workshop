@@ -58,10 +58,11 @@ conda install -c bioconda htseq
 wget http://ftp.ensembl.org/pub/current_gtf/homo_sapiens/Homo_sapiens.GRCh38.107.chr.gtf.gz
 #Unzipping the Zip file
 gunzip Homo_sapiens.GRCh38.107.chr.gtf.gz
+#Downloading .sam file
 wget https://github.com/josoga2/yt-dataset/blob/main/dataset/alignment/ACBarrie.sam?raw=true -O ACBarrie.sam
 htseq-count ACBarrie.sam Homo_sapiens.GRCh38.107.chr.gtf --t=gene --stranded=yes --i=gene_id > Output/gene_read.txt
 #Error occured when processing SAM input (line 11556 of file ACBarrie.sam):
-  ('SAM line does not contain at least 11 tab-delimited fields.', 'line 11556 of file ACBarrie.sam')
+  #('SAM line does not contain at least 11 tab-delimited fields.', 'line 11556 of file ACBarrie.sam')
 exit
   
 
